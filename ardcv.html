@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --bg-color: #682939;
+        }
+        body {
+            background-color: var(--bg-color);
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+    <div id="page1" class="max-w-3xl mx-auto p-5">
+        <div class="bg-pink-100 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+            <div class="flex items-center space-x-4">
+                <img src="foto ardha.jpeg" alt="Profile" class="rounded-full w-32 h-32 border-4 border-gray-200 animate__animated animate__pulse animate__infinite">
+                <div>
+                    <h1 class="text-4xl font-bold">Az'zahra Ardha Khamila</h1>
+                    <p class="text-blue-400 text-lg">Web Developer | UI/UX Designer | Full-Stack Enthusiast</p>
+                    <p class="text-gray-400 italic">Passionate about crafting intuitive and stunning digital experiences.</p>
+                </div>
+            </div>
+            
+            <div class="mt-6">
+                <h2 class="text-2xl font-semibold border-b border-blue-500 pb-2">Kontak</h2>
+                <p class="text-lg"><strong>Email:</strong> azzahraardhaa@gmail.com</p>
+                <p class="text-lg"><strong>Telepon:</strong> +62 82123656835</p>
+                <p class="text-lg"><strong>LinkedIn:</strong> linkedin.com/in/namakamu</p>
+                <p class="text-lg"><strong>Website:</strong> www.namakamu.com</p>
+            </div>
+
+            <div class="mt-6">
+                <h2 class="text-2xl font-semibold border-b border-blue-500 pb-2">Navigasi</h2>
+                <button onclick="showPage('page2')" class="mt-3 bg-gray-400 text-white px-4 py-2 rounded-md shadow hover:bg-gray-800 animate__animated animate__heartBeat animate__infinite">Lihat Pengalaman</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="page2" class="max-w-3xl mx-auto p-5 hidden">
+        <div class="bg-pink-100 p-8 rounded-lg shadow-lg animate__animated animate__fadeIn">
+            <h2 class="text-2xl font-semibold border-b border-blue-500 pb-2">Pengalaman</h2>
+            <p class="mt-2 text-lg"><strong>Frontend Developer</strong> - Perusahaan ABC (2022 - Sekarang)</p>
+            <p>Mengembangkan dan mendesain tampilan website yang responsif dan user-friendly.</p>
+            <p class="mt-2 text-lg"><strong>UI/UX Designer</strong> - Startup XYZ (2020 - 2022)</p>
+            <p>Mendesain pengalaman pengguna yang intuitif dan menarik untuk aplikasi mobile dan web.</p>
+            <p class="mt-2 text-lg"><strong>Tentang Saya</strong></p>
+            <p>Saya sekarang berada di kelas 10 di Sekolah SMK Negeri 1 Surabaya, saya berada di jurusan RPL, cukup banyak yang telah saya pelajari seperti saat sekarang saya mempelajari html untuk membuat cv, mungkin selebihnya akan berkembang semakin berjalannya tahun.</p>
+
+            <div class="mt-6">
+                <h2 class="text-2xl font-semibold border-b border-blue-500 pb-2">Galeri Proyek</h2>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <img src="bachibae.jpg" alt="Project 1" class="rounded-lg shadow-lg w-full h-40 object-cover animate__animated animate__zoomIn">
+                    <img src="download.jpg" alt="Project 2" class="rounded-lg shadow-lg w-full h-40 object-cover animate__animated animate__zoomIn animate__delay-1s">
+                    <img src="Face reveal, chicos ☺️.jpg" alt="Project 3" class="rounded-lg shadow-lg w-full h-40 object-cover animate__animated animate__zoomIn animate__delay-2s">
+                    <img src="7f1de97a-5f76-4fcd-b504-efcd8cd569a4.jpg" alt="Project 4" class="rounded-lg shadow-lg w-full h-40 object-cover animate__animated animate__zoomIn animate__delay-3s">
+                </div>
+            </div>
+            
+            <button onclick="showPage('page1')" class="mt-5 bg-gray-400 text-white px-4 py-2 rounded-md shadow hover:bg-gray-800 animate__animated animate__bounce">Kembali ke Profil</button>
+        </div>
+    </div>
+    
+    <script>
+        function showPage(page) {
+            document.getElementById('page1').classList.add('hidden');
+            document.getElementById('page2').classList.add('hidden');
+            document.getElementById(page).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
